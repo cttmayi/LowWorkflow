@@ -1,178 +1,169 @@
 <!-- markdownlint-disable MD030 -->
 
-# Contributing to Flowise
+# 贡献给 Flowise
 
-English | [中文](./i18n/CONTRIBUTING-ZH.md)
+[English](../CONTRIBUTING.md) | 中文
 
-We appreciate any form of contributions.
+我们欢迎任何形式的贡献。
 
-## ⭐ Star
+## ⭐ 点赞
 
-Star and share the [Github Repo](https://github.com/FlowiseAI/Flowise).
+点赞并分享[Github 仓库](https://github.com/FlowiseAI/Flowise)。
 
-## 🙋 Q&A
+## 🙋 问题和回答
 
-Search up for any questions in [Q&A section](https://github.com/FlowiseAI/Flowise/discussions/categories/q-a), if you can't find one, don't hesitate to create one. It might helps others that have similar question.
+在[问题和回答](https://github.com/FlowiseAI/Flowise/discussions/categories/q-a)部分搜索任何问题，如果找不到，可以毫不犹豫地创建一个。这可能会帮助到其他有类似问题的人。
 
-## 🙌 Share Chatflow
+## 🙌 分享 Chatflow
 
-Yes! Sharing how you use Flowise is a way of contribution. Export your chatflow as JSON, attach a screenshot and share it in [Show and Tell section](https://github.com/FlowiseAI/Flowise/discussions/categories/show-and-tell).
+是的！分享你如何使用 Flowise 是一种贡献方式。将你的 Chatflow 导出为 JSON，附上截图并在[展示和分享](https://github.com/FlowiseAI/Flowise/discussions/categories/show-and-tell)部分分享。
 
-## 💡 Ideas
+## 💡 想法
 
-Ideas are welcome such as new feature, apps integration, and blockchain networks. Submit in [Ideas section](https://github.com/FlowiseAI/Flowise/discussions/categories/ideas).
+欢迎各种想法，如新功能、应用集成和区块链网络。在[想法](https://github.com/FlowiseAI/Flowise/discussions/categories/ideas)部分提交。
 
-## 🐞 Report Bugs
+## 🐞 报告错误
 
-Found an issue? [Report it](https://github.com/FlowiseAI/Flowise/issues/new/choose).
+发现问题了吗？[报告它](https://github.com/FlowiseAI/Flowise/issues/new/choose)。
 
-## 👨‍💻 Contribute to Code
+## 👨‍💻 贡献代码
 
-Not sure what to contribute? Some ideas:
+不确定要贡献什么？一些想法：
 
--   Create new components from `packages/components`
--   Update existing components such as extending functionality, fixing bugs
--   Add new chatflow ideas
+-   从 `packages/components` 创建新组件
+-   更新现有组件，如扩展功能、修复错误
+-   添加新的 Chatflow 想法
 
-### Developers
+### 开发人员
 
-Flowise has 3 different modules in a single mono repository.
+Flowise 在一个单一的单体存储库中有 3 个不同的模块。
 
--   `server`: Node backend to serve API logics
--   `ui`: React frontend
--   `components`: Third-party nodes integrations
+-   `server`：用于提供 API 逻辑的 Node 后端
+-   `ui`：React 前端
+-   `components`：Langchain/LlamaIndex 组件
 
-#### Prerequisite
+#### 先决条件
 
--   Install [PNPM](https://pnpm.io/installation). The project is configured to use pnpm v9.
+-   安装 [PNPM](https://pnpm.io/installation)
     ```bash
     npm i -g pnpm
     ```
 
-#### Step by step
+#### 逐步指南
 
-1. Fork the official [Flowise Github Repository](https://github.com/FlowiseAI/Flowise).
+1. Fork 官方的[Flowise Github 仓库](https://github.com/FlowiseAI/Flowise)。
 
-2. Clone your forked repository.
+2. 克隆你 fork 的存储库。
 
-3. Create a new branch, see [guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository). Naming conventions:
+3. 创建一个新的分支，参考[指南](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)。命名约定：
 
-    - For feature branch: `feature/<Your New Feature>`
-    - For bug fix branch: `bugfix/<Your New Bugfix>`.
+    - 对于功能分支：`feature/<你的新功能>`
+    - 对于 bug 修复分支：`bugfix/<你的新bug修复>`。
 
-4. Switch to the newly created branch.
+4. 切换到新创建的分支。
 
-5. Go into repository folder
+5. 进入存储库文件夹
 
     ```bash
     cd Flowise
     ```
 
-6. Install all dependencies of all modules:
+6. 安装所有模块的依赖项：
 
     ```bash
     pnpm install
     ```
 
-7. Build all the code:
+7. 构建所有代码：
 
     ```bash
     pnpm build
     ```
 
-8. Start the app on [http://localhost:3000](http://localhost:3000)
+8. 在[http://localhost:3000](http://localhost:3000)上启动应用程序
 
     ```bash
     pnpm start
     ```
 
-9. For development:
+9. 开发时：
 
-    - Create `.env` file and specify the `VITE_PORT` (refer to `.env.example`) in `packages/ui`
-    - Create `.env` file and specify the `PORT` (refer to `.env.example`) in `packages/server`
-    - Run
+    - 在`packages/ui`中创建`.env`文件并指定`VITE_PORT`（参考`.env.example`）
+    - 在`packages/server`中创建`.env`文件并指定`PORT`（参考`.env.example`）
+    - 运行
 
     ```bash
     pnpm dev
     ```
 
-    Any changes made in `packages/ui` or `packages/server` will be reflected on [http://localhost:8080](http://localhost:8080)
+    对`packages/ui`或`packages/server`进行的任何更改都将反映在[http://localhost:8080](http://localhost:8080)上
 
-    For changes made in `packages/components`, run `pnpm build` again to pickup the changes.
+    对于`packages/components`中进行的更改，再次运行`pnpm build`以应用更改。
 
-10. After making all the changes, run
+10. 做完所有的更改后，运行以下命令来确保在生产环境中一切正常：
 
     ```bash
     pnpm build
     ```
 
-    and
+    和
 
     ```bash
     pnpm start
     ```
 
-    to make sure everything works fine in production.
+11. 提交代码并从指向 [Flowise 主分支](https://github.com/FlowiseAI/Flowise/tree/master) 的分叉分支上提交 Pull Request。
 
-11. Commit code and submit Pull Request from forked branch pointing to [Flowise master](https://github.com/FlowiseAI/Flowise/tree/master).
+## 🌱 环境变量
 
-## 🌱 Env Variables
+Flowise 支持不同的环境变量来配置您的实例。您可以在 `packages/server` 文件夹中的 `.env` 文件中指定以下变量。阅读[更多信息](https://docs.flowiseai.com/environment-variables)
 
-Flowise support different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://docs.flowiseai.com/environment-variables)
+| 变量名                       | 描述                                                                 | 类型                                            | 默认值                              |
+| ---------------------------- | -------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------- |
+| PORT                         | Flowise 运行的 HTTP 端口                                             | 数字                                            | 3000                                |
+| FLOWISE_USERNAME             | 登录用户名                                                           | 字符串                                          |                                     |
+| FLOWISE_PASSWORD             | 登录密码                                                             | 字符串                                          |                                     |
+| FLOWISE_FILE_SIZE_LIMIT      | 上传文件大小限制                                                     | 字符串                                          | 50mb                                |
+| DISABLE_CHATFLOW_REUSE       | 强制为每次调用创建一个新的 ChatFlow，而不是重用缓存中的现有 ChatFlow | 布尔值                                          |                                     |
+| DEBUG                        | 打印组件的日志                                                       | 布尔值                                          |                                     |
+| LOG_PATH                     | 存储日志文件的位置                                                   | 字符串                                          | `your-path/Flowise/logs`            |
+| LOG_LEVEL                    | 日志的不同级别                                                       | 枚举字符串: `error`, `info`, `verbose`, `debug` | `info`                              |
+| APIKEY_STORAGE_TYPE          | 存储 API 密钥的存储类型                                              | 枚举字符串: `json`, `db`                        | `json`                              |
+| APIKEY_PATH                  | 存储 API 密钥的位置, 当`APIKEY_STORAGE_TYPE`是`json`                 | 字符串                                          | `your-path/Flowise/packages/server` |
+| TOOL_FUNCTION_BUILTIN_DEP    | 用于工具函数的 NodeJS 内置模块                                       | 字符串                                          |                                     |
+| TOOL_FUNCTION_EXTERNAL_DEP   | 用于工具函数的外部模块                                               | 字符串                                          |                                     |
+| DATABASE_TYPE                | 存储 flowise 数据的数据库类型                                        | 枚举字符串: `sqlite`, `mysql`, `postgres`       | `sqlite`                            |
+| DATABASE_PATH                | 数据库保存的位置（当 DATABASE_TYPE 是 sqlite 时）                    | 字符串                                          | `your-home-dir/.flowise`            |
+| DATABASE_HOST                | 主机 URL 或 IP 地址（当 DATABASE_TYPE 不是 sqlite 时）               | 字符串                                          |                                     |
+| DATABASE_PORT                | 数据库端口（当 DATABASE_TYPE 不是 sqlite 时）                        | 字符串                                          |                                     |
+| DATABASE_USERNAME            | 数据库用户名（当 DATABASE_TYPE 不是 sqlite 时）                      | 字符串                                          |                                     |
+| DATABASE_PASSWORD            | 数据库密码（当 DATABASE_TYPE 不是 sqlite 时）                        | 字符串                                          |                                     |
+| DATABASE_NAME                | 数据库名称（当 DATABASE_TYPE 不是 sqlite 时）                        | 字符串                                          |                                     |
+| SECRETKEY_PATH               | 保存加密密钥（用于加密/解密凭据）的位置                              | 字符串                                          | `your-path/Flowise/packages/server` |
+| FLOWISE_SECRETKEY_OVERWRITE  | 加密密钥用于替代存储在 SECRETKEY_PATH 中的密钥                       | 字符串                                          |
+| DISABLE_FLOWISE_TELEMETRY    | 关闭遥测                                                             | 字符串                                          |
+| MODEL_LIST_CONFIG_JSON       | 加载模型的位置                                                       | 字符                                            | `/your_model_list_config_file_path` |
+| STORAGE_TYPE                 | 上传文件的存储类型                                                   | 枚举字符串: `local`, `s3`                       | `local`                             |
+| BLOB_STORAGE_PATH            | 上传文件存储的本地文件夹路径, 当`STORAGE_TYPE`是`local`              | 字符串                                          | `your-home-dir/.flowise/storage`    |
+| S3_STORAGE_BUCKET_NAME       | S3 存储文件夹路径, 当`STORAGE_TYPE`是`s3`                            | 字符串                                          |                                     |
+| S3_STORAGE_ACCESS_KEY_ID     | AWS 访问密钥 (Access Key)                                            | 字符串                                          |                                     |
+| S3_STORAGE_SECRET_ACCESS_KEY | AWS 密钥 (Secret Key)                                                | 字符串                                          |                                     |
+| S3_STORAGE_REGION            | S3 存储地区                                                          | 字符串                                          |                                     |
+| S3_ENDPOINT_URL              | S3 端点 URL                                                          | 字符串                                          |                                     |
+| SHOW_COMMUNITY_NODES         | 显示由社区创建的节点                                                 | 布尔值                                          |                                     |
 
-| Variable                     | Description                                                                                     | Type                                             | Default                             |
-| ---------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------- |
-| PORT                         | The HTTP port Flowise runs on                                                                   | Number                                           | 3000                                |
-| CORS_ORIGINS                 | The allowed origins for all cross-origin HTTP calls                                             | String                                           |                                     |
-| IFRAME_ORIGINS               | The allowed origins for iframe src embedding                                                    | String                                           |                                     |
-| FLOWISE_USERNAME             | Username to login                                                                               | String                                           |                                     |
-| FLOWISE_PASSWORD             | Password to login                                                                               | String                                           |                                     |
-| FLOWISE_FILE_SIZE_LIMIT      | Upload File Size Limit                                                                          | String                                           | 50mb                                |
-| DISABLE_CHATFLOW_REUSE       | Forces the creation of a new ChatFlow for each call instead of reusing existing ones from cache | Boolean                                          |                                     |
-| DEBUG                        | Print logs from components                                                                      | Boolean                                          |                                     |
-| LOG_PATH                     | Location where log files are stored                                                             | String                                           | `your-path/Flowise/logs`            |
-| LOG_LEVEL                    | Different levels of logs                                                                        | Enum String: `error`, `info`, `verbose`, `debug` | `info`                              |
-| LOG_JSON_SPACES              | Spaces to beautify JSON logs                                                                    |                                                  | 2                                   |
-| APIKEY_STORAGE_TYPE          | To store api keys on a JSON file or database. Default is `json`                                 | Enum String: `json`, `db`                        | `json`                              |
-| APIKEY_PATH                  | Location where api keys are saved when `APIKEY_STORAGE_TYPE` is `json`                          | String                                           | `your-path/Flowise/packages/server` |
-| TOOL_FUNCTION_BUILTIN_DEP    | NodeJS built-in modules to be used for Tool Function                                            | String                                           |                                     |
-| TOOL_FUNCTION_EXTERNAL_DEP   | External modules to be used for Tool Function                                                   | String                                           |                                     |
-| DATABASE_TYPE                | Type of database to store the flowise data                                                      | Enum String: `sqlite`, `mysql`, `postgres`       | `sqlite`                            |
-| DATABASE_PATH                | Location where database is saved (When DATABASE_TYPE is sqlite)                                 | String                                           | `your-home-dir/.flowise`            |
-| DATABASE_HOST                | Host URL or IP address (When DATABASE_TYPE is not sqlite)                                       | String                                           |                                     |
-| DATABASE_PORT                | Database port (When DATABASE_TYPE is not sqlite)                                                | String                                           |                                     |
-| DATABASE_USER                | Database username (When DATABASE_TYPE is not sqlite)                                            | String                                           |                                     |
-| DATABASE_PASSWORD            | Database password (When DATABASE_TYPE is not sqlite)                                            | String                                           |                                     |
-| DATABASE_NAME                | Database name (When DATABASE_TYPE is not sqlite)                                                | String                                           |                                     |
-| DATABASE_SSL_KEY_BASE64      | Database SSL client cert in base64 (takes priority over DATABASE_SSL)                           | Boolean                                          | false                               |
-| DATABASE_SSL                 | Database connection overssl (When DATABASE_TYPE is postgre)                                     | Boolean                                          | false                               |
-| SECRETKEY_PATH               | Location where encryption key (used to encrypt/decrypt credentials) is saved                    | String                                           | `your-path/Flowise/packages/server` |
-| FLOWISE_SECRETKEY_OVERWRITE  | Encryption key to be used instead of the key stored in SECRETKEY_PATH                           | String                                           |                                     |
-| DISABLE_FLOWISE_TELEMETRY    | Turn off telemetry                                                                              | Boolean                                          |                                     |
-| MODEL_LIST_CONFIG_JSON       | File path to load list of models from your local config file                                    | String                                           | `/your_model_list_config_file_path` |
-| STORAGE_TYPE                 | Type of storage for uploaded files. default is `local`                                          | Enum String: `s3`, `local`                       | `local`                             |
-| BLOB_STORAGE_PATH            | Local folder path where uploaded files are stored when `STORAGE_TYPE` is `local`                | String                                           | `your-home-dir/.flowise/storage`    |
-| S3_STORAGE_BUCKET_NAME       | Bucket name to hold the uploaded files when `STORAGE_TYPE` is `s3`                              | String                                           |                                     |
-| S3_STORAGE_ACCESS_KEY_ID     | AWS Access Key                                                                                  | String                                           |                                     |
-| S3_STORAGE_SECRET_ACCESS_KEY | AWS Secret Key                                                                                  | String                                           |                                     |
-| S3_STORAGE_REGION            | Region for S3 bucket                                                                            | String                                           |                                     |
-| S3_ENDPOINT_URL              | Custom Endpoint for S3                                                                          | String                                           |                                     |
-| SHOW_COMMUNITY_NODES         | Show nodes created by community                                                                 | Boolean                                          |                                     |
-
-You can also specify the env variables when using `npx`. For example:
+您也可以在使用 `npx` 时指定环境变量。例如：
 
 ```
 npx flowise start --PORT=3000 --DEBUG=true
 ```
 
-## 📖 Contribute to Docs
+## 📖 贡献文档
 
-[Flowise Docs](https://github.com/FlowiseAI/FlowiseDocs)
+[Flowise 文档](https://github.com/FlowiseAI/FlowiseDocs)
 
-## 🏷️ Pull Request process
+## 🏷️ Pull Request 流程
 
-A member of the FlowiseAI team will automatically be notified/assigned when you open a pull request. You can also reach out to us on [Discord](https://discord.gg/jbaHfsRVBW).
+当您打开一个 Pull Request 时，FlowiseAI 团队的成员将自动收到通知/指派。您也可以在 [Discord](https://discord.gg/jbaHfsRVBW) 上联系我们。
 
-## 📜 Code of Conduct
-
-This project and everyone participating in it are governed by the Code of Conduct which can be found in the [file](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to hello@flowiseai.com.
+##

@@ -1,76 +1,49 @@
-# Contributor Covenant Code of Conduct
+<!-- markdownlint-disable MD030 -->
 
-English | [中文](./i18n/CODE_OF_CONDUCT-ZH.md)
+# 贡献者公约行为准则
 
-## Our Pledge
+[English](../CODE_OF_CONDUCT.md) | 中文
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+## 我们的承诺
 
-## Our Standards
+为了促进一个开放和友好的环境，我们作为贡献者和维护者承诺，使参与我们的项目和社区的体验对每个人来说都是无骚扰的，无论年龄、体型、残疾、种族、性别认同和表达、经验水平、国籍、个人形象、种族、宗教或性取向如何。
 
-Examples of behavior that contributes to creating a positive environment
-include:
+## 我们的标准
 
--   Using welcoming and inclusive language
--   Being respectful of differing viewpoints and experiences
--   Gracefully accepting constructive criticism
--   Focusing on what is best for the community
--   Showing empathy towards other community members
+有助于创建积极环境的行为示例包括：
 
-Examples of unacceptable behavior by participants include:
+-   使用友好和包容性的语言
+-   尊重不同的观点和经验
+-   优雅地接受建设性的批评
+-   关注社区最有利的事情
+-   向其他社区成员表达同理心
 
--   The use of sexualized language or imagery and unwelcome sexual attention or
-    advances
--   Trolling, insulting/derogatory comments, and personal or political attacks
--   Public or private harassment
--   Publishing others' private information, such as a physical or electronic
-    address, without explicit permission
--   Other conduct which could reasonably be considered inappropriate in a
-    professional setting
+参与者不可接受的行为示例包括：
 
-## Our Responsibilities
+-   使用性暗示的语言或图像和不受欢迎的性关注或进展
+-   恶作剧、侮辱/贬低的评论和个人或政治攻击
+-   公开或私下骚扰
+-   未经明确许可发布他人的私人信息，如实际或电子地址
+-   在专业环境中可能被合理认为不适当的其他行为
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+## 我们的责任
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+项目维护者有责任明确可接受行为的标准，并预期对任何不可接受行为的情况采取适当和公正的纠正措施。
 
-## Scope
+项目维护者有权和责任删除、编辑或拒绝不符合本行为准则的评论、提交、代码、维基编辑、问题和其他贡献，或者临时或永久禁止任何贡献者，如果他们认为其行为不适当、威胁、冒犯或有害。
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+## 适用范围
 
-## Enforcement
+本行为准则适用于项目空间和公共空间，当个人代表项目或其社区时。代表项目或社区的示例包括使用官方项目电子邮件地址、通过官方社交媒体账号发布或在线或离线活动中担任指定代表。项目的代表可以由项目维护者进一步定义和澄清。
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at hello@flowiseai.com. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+## 执法
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+可以通过联系项目团队 hello@flowiseai.com 来报告滥用、骚扰或其他不可接受的行为。所有投诉将经过审核和调查，并将得出视情况认为必要和适当的回应。项目团队有义务对事件举报人保持机密。具体执行政策的更多细节可能会单独发布。
 
-## Attribution
+如果项目维护者不诚信地遵守或执行行为准则，可能会面临其他项目领导成员决定的临时或永久的后果。
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
+## 归属
 
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+该行为准则的内容来自于[贡献者公约](http://contributor-covenant.org/)1.4 版，可在[http://contributor-covenant.org/version/1/4](http://contributor-covenant.org/version/1/4)上获取。
+
+[主页]: http://contributor-covenant.org
